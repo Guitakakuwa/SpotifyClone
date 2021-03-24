@@ -17,8 +17,8 @@
 		7385BC8026094BE100B19539 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7385BC7F26094BE100B19539 /* LoginView.storyboard */; };
 		7385BC89260950DE00B19539 /* proxima-nova.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7385BC8826094E5900B19539 /* proxima-nova.otf */; };
 		7385BC8E2609517300B19539 /* proxima-nova-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7385BC8D2609516700B19539 /* proxima-nova-bold.otf */; };
-		73DCF2D62609684A006C3205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DCF2D52609684A006C3205 /* Main.storyboard */; };
 		73DCF2E126096A39006C3205 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCF2E026096A39006C3205 /* LoginViewController.swift */; };
+		BF95A31B260AB6C8006B4478 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF95A31A260AB6C8006B4478 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		7385BC7F26094BE100B19539 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
 		7385BC8826094E5900B19539 /* proxima-nova.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-nova.otf"; sourceTree = "<group>"; };
 		7385BC8D2609516700B19539 /* proxima-nova-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-nova-bold.otf"; sourceTree = "<group>"; };
-		73DCF2D52609684A006C3205 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		73DCF2E026096A39006C3205 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BF95A31A260AB6C8006B4478 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,6 @@
 		7385BC4526094BB700B19539 /* SpotifyClone */ = {
 			isa = PBXGroup;
 			children = (
-				73DCF2D52609684A006C3205 /* Main.storyboard */,
 				7385BC8726094E2C00B19539 /* Font */,
 				7385BC7926094BC700B19539 /* Login */,
 				7385BC4626094BB700B19539 /* AppDelegate.swift */,
@@ -141,26 +140,12 @@
 		7385BC7926094BC700B19539 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				BF95A31F260AB6DA006B4478 /* Model */,
+				BF95A319260AB6B0006B4478 /* LoginViewModel */,
 				7385BC7F26094BE100B19539 /* LoginView.storyboard */,
-				7385BC7E26094BD700B19539 /* ViewModel */,
-				7385BC7D26094BD200B19539 /* Model */,
 				73DCF2E026096A39006C3205 /* LoginViewController.swift */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		7385BC7D26094BD200B19539 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7385BC7E26094BD700B19539 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7385BC8726094E2C00B19539 /* Font */ = {
@@ -170,6 +155,21 @@
 				7385BC8826094E5900B19539 /* proxima-nova.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		BF95A319260AB6B0006B4478 /* LoginViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF95A31A260AB6C8006B4478 /* LoginViewModel.swift */,
+			);
+			path = LoginViewModel;
+			sourceTree = "<group>";
+		};
+		BF95A31F260AB6DA006B4478 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +278,6 @@
 				7385BC5326094BB900B19539 /* LaunchScreen.storyboard in Resources */,
 				7385BC5026094BB900B19539 /* Assets.xcassets in Resources */,
 				7385BC8E2609517300B19539 /* proxima-nova-bold.otf in Resources */,
-				73DCF2D62609684A006C3205 /* Main.storyboard in Resources */,
 				7385BC89260950DE00B19539 /* proxima-nova.otf in Resources */,
 				7385BC8026094BE100B19539 /* LoginView.storyboard in Resources */,
 			);
@@ -308,6 +307,7 @@
 				73DCF2E126096A39006C3205 /* LoginViewController.swift in Sources */,
 				7385BC4B26094BB700B19539 /* ViewController.swift in Sources */,
 				7385BC4726094BB700B19539 /* AppDelegate.swift in Sources */,
+				BF95A31B260AB6C8006B4478 /* LoginViewModel.swift in Sources */,
 				7385BC4926094BB700B19539 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

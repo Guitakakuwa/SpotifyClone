@@ -13,10 +13,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="2Pu-l7-j3h">
             <objects>
-                <viewController id="ydd-Ym-oMM" sceneMemberID="viewController">
+                <viewController id="ydd-Ym-oMM" customClass="LoginViewController" customModule="SpotifyClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6IG-Ai-aNS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,16 +25,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4qS-PA-5Nf">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="425.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milhões de músicas à sua escolha." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM5-5Q-9Ct">
-                                        <rect key="frame" x="40" y="357" width="334" height="66"/>
+                                        <rect key="frame" x="40" y="340.5" width="334" height="77"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="33"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="kA2-DB-uaD">
-                                        <rect key="frame" x="182" y="277" width="50" height="50"/>
+                                        <rect key="frame" x="182" y="260.5" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="kA2-DB-uaD" secondAttribute="height" multiplier="1:1" id="Mbs-tc-Urg"/>
                                             <constraint firstAttribute="height" constant="50" id="aMN-Mi-HCp"/>
@@ -66,20 +66,11 @@
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                         <state key="normal">
                                             <string key="title">Continuar com o número 
-de telefone</string>
+             de telefone</string>
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuQ-a1-g7b">
@@ -92,12 +83,6 @@ de telefone</string>
                                         <state key="normal" title="Continuar com o Google">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google-black-logo" translatesAutoresizingMaskIntoConstraints="NO" id="bld-Bv-1Gh">
                                         <rect key="frame" x="29.5" y="628" width="28" height="50"/>
@@ -164,7 +149,7 @@ de telefone</string>
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grátis no Spotify." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfQ-Ub-F9N">
-                                        <rect key="frame" x="16" y="439" width="382" height="33"/>
+                                        <rect key="frame" x="16" y="433.5" width="382" height="38.5"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="33"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -233,6 +218,15 @@ de telefone</string>
                             <constraint firstItem="3iU-rP-Rxd" firstAttribute="leading" secondItem="6IG-Ai-aNS" secondAttribute="leading" id="cB7-Y8-olD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="4qS-PA-5Nf" id="bQ6-98-rtI"/>
+                        <outlet property="loginWithAppleButton" destination="erg-CT-ea9" id="Iau-8W-Wvu"/>
+                        <outlet property="loginWithFacebookButton" destination="gno-kT-a8e" id="pYd-vT-u4Q"/>
+                        <outlet property="loginWithGoogleButton" destination="xuQ-a1-g7b" id="0IH-KB-U62"/>
+                        <outlet property="loginWithPhoneNumberButton" destination="Vnk-0J-DgV" id="YAi-Re-vtG"/>
+                        <outlet property="loginWithSpotifyButton" destination="mrX-Bh-cvC" id="VmC-w8-FW6"/>
+                        <outlet property="registerNowButton" destination="cmG-J6-dCN" id="nUZ-uV-7hA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRF-UO-ihM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
